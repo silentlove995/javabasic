@@ -7,7 +7,9 @@ public class Bai14 {
          int m,n;
          int count = 0;
          Scanner scanner = new Scanner(System.in);
+         System.out.print("Enter m: ");
          m = scanner.nextInt();
+         System.out.println("Enter n: ");
          n = scanner.nextInt();
 
          if ((m > 0 && n >= 0) || n >= 0){
@@ -24,6 +26,6 @@ public class Bai14 {
                  }
              }
          }
-        System.out.println("\nCo: " + count + " so chinh phuong thoa man.");
+        System.out.println("\nHave: " + count + " square number satisfy.");
     }
 }

@@ -6,8 +6,12 @@ public class Bai1 {
     public static void main(String[] args) {
         int m, n;
         Scanner scanner = new Scanner(System.in);
-        m = scanner.nextInt();//rong
-        n = scanner.nextInt();//cao
+        do {
+            System.out.print("Insert width: ");
+            n = scanner.nextInt();
+            System.out.print("Insert height: ");
+            m = scanner.nextInt();
+        }while(n <= 0 || m <= 0 || (n <= 0 && m <= 0));
         for (int i = 0; i < m; i++){
             for (int j = 0; j < n; j++){
                 System.out.print(" * ");

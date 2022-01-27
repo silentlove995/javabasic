@@ -7,8 +7,10 @@ public class Bai1 {
         int[] arr;
         int n;
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter limit of array: ");
         n = scanner.nextInt();
         arr = new int[n];
+        System.out.println("Enter element of array: ");
         for (int i = 0; i < n; i++){
             arr[i] = scanner.nextInt();
         }
@@ -23,10 +25,11 @@ public class Bai1 {
                 break;
             }
         }
-        if (check){
-            System.out.println("Mang doi xung.");
-        }else{
-            System.out.println("Mang khong doi xung.");
+
+        if (check) {
+            System.out.println("Symmetry array.");
+        } else {
+            System.out.println("Unsymmetrical array.");
         }
     }
 }

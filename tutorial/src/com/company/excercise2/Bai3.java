@@ -4,31 +4,32 @@ import java.util.Scanner;
 
 public class Bai3 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         int n, x, index = -1, min = Integer.MAX_VALUE;
         int[] arr;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Nhap vao n, x: ");
+        System.out.print("Enter limit of array: ");
         n = scanner.nextInt();
+        System.out.print("Enter x: ");
         x = scanner.nextInt();
 
         arr = new int[n];
-
+        System.out.println("Enter element of array: ");
         for (int i = 0; i < n; i++) {
             arr[i] = scanner.nextInt();
         }
 
         for (int i = 0; i < n; i++) {
             int currentMin = getMin(arr[i], x);
-            if (nguyenTo(arr[i]) && currentMin < min){
+            if (primeNumber(arr[i]) && currentMin < min){
                 min = currentMin;
                 index = i;
             }
         }
 
-        if (index != -1){//tim thay gia tri thoa man
-            System.out.println("CHi so phan tu: " +index+" , Gia tri: " + arr[index]);
+        if (index != -1){
+            System.out.println("Index of element: " +index+" , value: " + arr[index]);
         }else{
-            System.out.println("Khong ton tai gia tri thoa man");
+            System.out.println("Satisfy element not found");
         }
     }
 
@@ -36,7 +37,7 @@ public class Bai3 {
         return Math.abs(a-x);
     }
 
-    public static boolean nguyenTo(int n){
+    public static boolean primeNumber(int n){
         if (n < 2){
             return false;
         }

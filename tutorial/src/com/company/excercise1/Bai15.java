@@ -6,6 +6,7 @@ public class Bai15 {
     public static void main(String[] args) {
         double c;
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter c: ");
         c = scanner.nextDouble();
         double pi = 0;
         long n = 0;

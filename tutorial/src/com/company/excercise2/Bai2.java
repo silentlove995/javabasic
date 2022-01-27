@@ -7,15 +7,16 @@ public class Bai2 {
         Scanner scanner = new Scanner(System.in);
         int n, count;
         int[] arr, res;
+        System.out.print("Enter limit of array: ");
         n = scanner.nextInt();
         arr = new int[n];
         res = new int[n];
-        System.out.println("Nhap cac phan tu cua mang: ");
+        System.out.println("Enter element of array: ");
         for (int i = 0; i < n; i++) {
             arr[i] = scanner.nextInt();
             res[i] = -1;
         }
-        //dem so lan xuat hien cua cac phan tu trong mang
+        //count exist of elements in array
         for (int i = 0; i < n; i++) {
             count = 1;
             for(int j = i+1; j < n; j++){
@@ -24,19 +25,18 @@ public class Bai2 {
                     res[j] = 0;
                 }
             }
-
             if (res[i] != 0){
                 res[i] = count;
             }
         }
-        //tim so lan xuat hien max
+        //find most appear element
         int max = res[0];
         for (int i = 0; i < n; i++) {
             if (res[i] > max){
                 max = res[i];
             }
         }
-        System.out.println("So lan xuat hien Max: " + max + ", cac phan tu: ");
+        System.out.println("Most appear: " + max + ", elements: ");
         for (int i = 0; i < n; i++) {
             if (res[i] == max){
                 System.out.print(arr[i]+ ", ");

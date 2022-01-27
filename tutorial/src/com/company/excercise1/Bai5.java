@@ -7,6 +7,7 @@ public class Bai5 {
     public static void main(String[] args) {
         int input;
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter random number from 0 to 99: ");
         input = scanner.nextInt();
         int count = 0;
         Random random = new Random();
@@ -15,7 +16,7 @@ public class Bai5 {
             count++;
             System.out.println("Random number: " + randNumber + ", input: " + input);
             if (randNumber == input){
-                System.out.println("Thuc hien " + count + " lan.");
+                System.out.println("Total random: " + count + " times.");
                 break;
             }
         }

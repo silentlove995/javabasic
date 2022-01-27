@@ -9,6 +9,7 @@ public class Bai4 {
         int[] arr;
         int n;
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter n: ");
         n = scanner.nextInt();
         Random rand = new Random();
         arr = new int[n];
@@ -30,14 +31,14 @@ public class Bai4 {
                 brr[bSize++] = arr[i];
             }
         }
-        System.out.println("Truoc khi sap xep: " );
+        System.out.println("Array before sort: " );
         System.out.println(Arrays.toString(arr));
         Arrays.sort(arr);
-        System.out.println("Sau khi sap xep: ");
+        System.out.println("Array after sort: ");
         System.out.println(Arrays.toString(arr));
 
         Arrays.sort(brr);
-        System.out.println("Mang chi chua cac phan tu duy nhat: ");
+        System.out.println("Array contain exclusively element: ");
         System.out.println(Arrays.toString(brr));
     }
 }

@@ -8,10 +8,11 @@ public class Bai6 {
         Scanner scanner = new Scanner(System.in);
         int[] arr;
         int n,x;
+        System.out.print("Enter limit of array: ");
         n = scanner.nextInt();
-        System.out.println("Nhap cac phan tu cua mang arr[] co " + n + " phan tu: ");
-        arr = nhap(n, scanner);
-        System.out.println("Nhap x: ");
+        System.out.print("Insert element of arr[] have " + n + " element: ");
+        arr = insert(n, scanner);
+        System.out.print("Enter x to insert: ");
         x = scanner.nextInt();
 
         int index = -1;
@@ -23,10 +24,11 @@ public class Bai6 {
         }
 
         if (index == -1){
-            //chen vao cuoi
+            //insert into end of array
             arr[n] = x;
         }else {
-            //dich phai toan bo cac phan tu tu vi tri index
+            //move all element to right from index
+            //System.arraycopy(arr, n-1, arr, n, index - 1 );
             for (int i = n; i > index ; i--) {
                 arr[i] = arr[i - 1];
             }
@@ -35,7 +37,7 @@ public class Bai6 {
         System.out.println(Arrays.toString(arr));
     }
 
-    public static int[] nhap(int n, Scanner scanner){
+    public static int[] insert(int n, Scanner scanner){
         int[] x = new int[n + 1];
         for (int i = 0; i < n; i++) {
             x[i] = scanner.nextInt();
