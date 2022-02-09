@@ -3,12 +3,12 @@ package com.company.excercise1;
 import java.util.Scanner;
 
 public class Bai12 {
+    public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         int n;
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter n: ");
         n = scanner.nextInt();
-        long f0 = 0,f1 = 1,fn = 0;
+        long f0 = 0,f1 = 1,fn;
         for (int i = 0; i <= n; i++){
             if (i < 2 ){
                 System.out.println(i);

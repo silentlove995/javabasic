@@ -4,9 +4,9 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Bai5 {
+    public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         int input;
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter random number from 0 to 99: ");
         input = scanner.nextInt();
         int count = 0;

@@ -3,8 +3,9 @@ package com.company.excercise1;
 import java.util.Scanner;
 
 public class Bai11 {
+    public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
-        int n = new Scanner(System.in).nextInt();
+        int n = scanner.nextInt();
         int count = 0;
         int x = 2;
         while (true){

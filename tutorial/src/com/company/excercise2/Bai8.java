@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 
 public class Bai8 {
+    public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         int m,n;
         int[][] arr, brr;
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter first side of matrix: ");
         m = scanner.nextInt();
         System.out.print("Enter second side of matrix: ");

@@ -3,8 +3,8 @@ package com.company.excercise2;
 import java.util.Scanner;
 
 public class Bai3 {
+    public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         int n, x, index = -1, min = Integer.MAX_VALUE;
         int[] arr;
         System.out.print("Enter limit of array: ");

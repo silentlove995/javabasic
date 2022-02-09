@@ -11,9 +11,9 @@ public class Bai9 {
         2..  7 5 2 3          2.. 6 4 1
                               3.. 2 1 1
      */
+    public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
         int m,n,k;
         int[][] a,b,c;
         System.out.print("Insert first side of matrix a: ");

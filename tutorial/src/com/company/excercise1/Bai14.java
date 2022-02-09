@@ -3,16 +3,17 @@ package com.company.excercise1;
 import java.util.Scanner;
 
 public class Bai14 {
+    public static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
          int m,n;
          int count = 0;
-         Scanner scanner = new Scanner(System.in);
          System.out.print("Enter m: ");
          m = scanner.nextInt();
          System.out.println("Enter n: ");
          n = scanner.nextInt();
 
-         if ((m > 0 && n >= 0) || n >= 0){
+         if (m > 0 && n >= 0){
              for (int i = m; i <= n; i++){
                  if (i >= 0){
                      int res = (int) Math.sqrt(i);

@@ -3,8 +3,10 @@ package com.company.excercise2;
 import java.util.Scanner;
 
 public class Bai2 {
+    public static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        long startTime = System.currentTimeMillis();
         int n, count;
         int[] arr, res;
         System.out.print("Enter limit of array: ");
@@ -43,5 +45,6 @@ public class Bai2 {
             }
         }
         System.out.println("\b\b");
+        System.out.println(System.currentTimeMillis() - startTime);
     }
 }

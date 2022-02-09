@@ -3,10 +3,10 @@ package com.company.excercise2;
 import java.util.Scanner;
 
 public class Bai1 {
+    public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         int[] arr;
         int n;
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter limit of array: ");
         n = scanner.nextInt();
         arr = new int[n];

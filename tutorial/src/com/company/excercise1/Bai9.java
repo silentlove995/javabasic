@@ -3,9 +3,9 @@ package com.company.excercise1;
 import java.util.Scanner;
 
 public class Bai9 {
+    public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         int n;
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter n: ");
         n = scanner.nextInt();
 

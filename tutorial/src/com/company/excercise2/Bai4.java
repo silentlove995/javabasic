@@ -5,10 +5,10 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Bai4 {
+    public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         int[] arr;
         int n;
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter n: ");
         n = scanner.nextInt();
         Random rand = new Random();
